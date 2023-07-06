@@ -1,10 +1,8 @@
 import React from 'react'
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-//import { FormGroup, FormControl, Button } from "react-bootstrap";
 import { FormGroup, Button } from "react-bootstrap";
-//import { Link, useNavigate } from 'react-router-dom';
-//import { v4 as uuid } from 'uuid';
+
 
 const ProductForm = (props) => {
 	

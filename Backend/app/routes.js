@@ -10,5 +10,6 @@ module.exports = (app) => {
 
   app.post("/addProduct", controller.addProduct);
   app.get("/getTodayproducts", controller.getTodayProduct);
+  //app.post("/getTopSellProducts", controller.getTopProduct);
   app.post("/getTopSellProducts", controller.getAllProduct);
 };

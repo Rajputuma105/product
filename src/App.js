@@ -21,9 +21,7 @@ const App = () => {
           <Navbar bg="dark" variant="dark">
             <Container>
               <Navbar.Brand>
-                <Link to={"/create-student"} className="nav-link">
-                  Product App
-                </Link>
+                <h3>Product App</h3>
               </Navbar.Brand>
 
               <Nav className="justify-content-end">

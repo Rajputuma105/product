@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import axios from "axios";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Table} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ProductForm from "./topSellForm.js";
-import { Table } from "react-bootstrap";
+
 const ProductsList = (props) => {
   const [products, setProducts] = useState([]);
   const [formValues] = useState({ date: "" });
@@ -14,7 +14,6 @@ const ProductsList = (props) => {
       .then((res) => {
         setProducts(res.data);
         console.log("Data" + res.data);
-        // props.history.push("/");
       })
       .catch((err) => alert("Something went wrong", err));
   };
@@ -34,7 +33,7 @@ const ProductsList = (props) => {
     });
   };
 
-  // Return form
+  // Return product form
   return (
     <div className="table-wrapper">
       <ProductForm
